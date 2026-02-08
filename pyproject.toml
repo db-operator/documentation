@@ -1,0 +1,19 @@
+[project]
+name = "documentation"
+version = "0.1.0"
+description = "Mkdocs site about the db-operator"
+authors = [
+    {name = "Nikolai Rodionov",email = "allanger@badhouseplants.net"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)",
+    "mkdocs-material (>=9.7.1,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
