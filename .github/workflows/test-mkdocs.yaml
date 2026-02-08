@@ -1,0 +1,19 @@
+name: Test code and mkdocs build
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+      - uses: pre-commit/action@v3.0.1
+      - uses: abatilo/actions-poetry@v3
+      - name: Build the mkdocs site
+        run: |-
+          poetry install --no-root
+          poetry run mkdocs build
