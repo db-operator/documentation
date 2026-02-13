@@ -1,4 +1,24 @@
 site_name: DB Operator
 theme:
+  logo: assets/logo.png
+  favicon: assets/logo.png
   name: material
   language: en
+  features:
+    - navigation.tabs
+
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode

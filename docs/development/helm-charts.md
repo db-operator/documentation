@@ -25,4 +25,3 @@ yq -i '.appVersion = "${GIT_SHA}"' ./charts/db-operator/Chart.yaml
 ```
 
 After that, CRDs will be up-to-date with the operator repo and you can test your changes.
-##
