@@ -102,7 +102,7 @@ instance1         Running        true
 
 If `.status.Status` is `true`, it means that you can create Databases on this instance.
 
-You can read more about DbInstances [here](dbinstances.md)
+You can read more about DbInstances [here](dbinstance.md)
 
 ## Create a Database
 
