@@ -135,4 +135,4 @@ templates:
     template: '{{ .instanceVar "PG_READONLYHOST" }}'
 ```
 
-If a value of the variable is changed on the instance, it will be also syned for each Database and User.
+If a value of a variable is changed on the instance, it will be also synced for each Database and User.
