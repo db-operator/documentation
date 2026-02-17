@@ -157,3 +157,7 @@ DB: $DATABASE_NAME
 PASSWORD: $PASSWORD
 USER: $USER
 ```
+
+### How to rotate passwords?
+
+To rotate a db password with a help of DB Operator, it's enough to remove/update the secret that is used by a database.
