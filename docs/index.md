@@ -45,9 +45,9 @@ After the reconciliation you should be able to find a `ConfigMap` and a `Secret`
 
 We distribute DB Operator as a `helm` chart. You don't have to use it, but if you want to be able to get support, it's would be easier for us if you use the chart.
 
-The charts is released as s simple help repo as well as a an OCI artifact.
+The charts are released as s simple helm repo as well as a an OCI artifact.
 
-To install the repo, run the following
+To use the repo, run the following:
 
 ```sh
 $ helm repo add db-operator https://db-operator.github.io/charts
