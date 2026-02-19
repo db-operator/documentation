@@ -29,4 +29,4 @@ More info about the db-operator chart can be found in the [README.md](https://gi
 
 ## Configure the operator via values
 
-> @allaner chart will be updated soon, and then I'll write a better docs
+> @allanger chart will be updated soon, and then I'll write a better docs
