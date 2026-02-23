@@ -18,7 +18,7 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
       - uses: actions/setup-python@v6
-      - uses: abatilo/actions-poetry@v3
+      - uses: abatilo/actions-poetry@v4
       - name: Build and deploy the mkdocs site
         run: |-
           poetry install --no-root
