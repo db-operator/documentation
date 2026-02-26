@@ -60,6 +60,21 @@ spec:
 
 This metadata can be used by external controllers that watch annotations or require specific labels to enable Secret synchronization or reflection across namespaces.
 
+## Using an existing user
+
+Since version **2.22.0** it's possible to make DB Operator grant access to a database to an existing user instead of generating a new one. To do so add `.spec.existingUser: ${USERNAME}` to your manifest.
+
+```yaml
+kind: DbUser
+metadata: {}
+spec:
+  existingUser: my-db-user
+```
+
+When using an existing user, DB Operator is not aware of the password anymore, hence the **password** field in the credentials Secret will be empty. Users must handle the authentication on their own.
+
+It's also important to understand, that when you are switching **from/to** existing user **to/from** a generated one, you need to remove the Secret from the cluster, so it's recreated, otherwise it's either going to be empty for a generated user, or filled for an existing one. It will most probably be fixed in future versions.
+
 ## Experimental features
 
 Experimental features are added via annotations, the following features are available for `DbUsers`
